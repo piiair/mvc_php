@@ -8,7 +8,7 @@ include_once ROOT . 'views/includes/header.php';
 <body>
     <?php include_once ROOT . 'views/includes/navbar.php'; ?> 
     <h1>Code de pierre</h1>
-     <p>c'est moi le boss</p>
+       <h2>code de sinda et pierre</h2> 
     <?php include_once ROOT . 'views/includes/footer.php'; ?>
 </body>
 
