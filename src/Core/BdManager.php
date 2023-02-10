@@ -45,7 +45,7 @@ class BdManager
     public function findAll($pTable)
     {   
         // requête pour tous les enregistrements d'une table
-        $sql = "SELECT * FROM $pTable WHERE id = 1";
+        $sql = "SELECT * FROM $pTable";
         // on éxécute une requête non préparée
         $stmt = $this->requete($sql);
         //On récupère le résultat sous forme d'objet
@@ -113,5 +113,5 @@ class BdManager
         $sql = "UPDATE $pTable SET $string_colonnes WHERE id = $pId";
         $this->requete($sql, $params);
     }
-
+    
 }
