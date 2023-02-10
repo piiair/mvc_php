@@ -8,6 +8,8 @@ include_once ROOT . 'views/includes/header.php';
 <body>
     <?php include_once ROOT . 'views/includes/navbar.php'; ?> 
     <div class="container flex-wrap">
+        <h4 class="text-center">Actions</h4>
+        <a href="<?= URL ?>src/Controller/TvaController.php?param=addTva"><button class="btn btn-success" >Ajouter une TVA</button></a>
         <div class="row m-3">
             <div class="col-5 border border-dark">
                 <table class="table">
@@ -34,12 +36,6 @@ include_once ROOT . 'views/includes/header.php';
                         <?php endforeach ?>
                     </tbody>
                 </table>        
-            </div>
-
-            <div class="col-5 offset-2 border border-dark">
-                <h4 class="text-center">Actions</h4>
-                <a href="<?= URL ?>src/Controller/TvaController.php?param=addTva"><button class="btn btn-success" >Ajouter une TVA</button></a>
-                
             </div>
         </div> 
     </div>
